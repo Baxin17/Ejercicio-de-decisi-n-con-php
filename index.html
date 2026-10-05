@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e9f7;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contenedor {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        h1 {
+            color: #7b2cbf;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 15px 0;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #7b2cbf;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a189a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Tienda de Ropa</h1>
+
+        <p>Calcula el total de tu compra</p>
+
+        <form action="descuento.php" method="post">
+
+            <label for="compra">Ingresa el total de tu compra:</label>
+
+            <br>
+
+            <input type="number" 
+                   id="compra" 
+                   name="compra" 
+                   placeholder="Ejemplo: 1500"
+                   min="0"
+                   step="0.01"
+                   required>
+
+            <br>
+
+            <input type="submit" value="Calcular">
+
+        </form>
+
+    </div>
+
+</body>
+</html>
